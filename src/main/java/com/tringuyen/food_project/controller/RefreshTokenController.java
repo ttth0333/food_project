@@ -22,6 +22,8 @@ import java.util.Map;
 @RestController
 @RequestMapping("/refresh-token")
 public class RefreshTokenController {
+    // Phải upload được file
+    // phải lấy ra được file đó và trả đường dẫn file cho người dùng
 
     @Autowired
     JwtTokenHelper jwtTokenHelper;
