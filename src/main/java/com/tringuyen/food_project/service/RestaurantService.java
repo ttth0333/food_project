@@ -10,4 +10,5 @@ public interface RestaurantService {
     // trả danh sách restaurant entity
     List<RestaurantDTO> getRestaurant();
     RestaurantDetailDTO getDetailRestaurant(int id);
+    void clearAllCache();
 }

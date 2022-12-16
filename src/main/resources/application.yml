@@ -19,4 +19,6 @@ server:
 file:
   upload-dir: Users\ttth0\Downloads\Video
 
-
+redis:
+  host: localhost
+  port: 6379

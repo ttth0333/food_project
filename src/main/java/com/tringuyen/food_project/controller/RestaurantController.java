@@ -27,6 +27,12 @@ public class RestaurantController {
         return new ResponseEntity<>(responseEntities, HttpStatus.OK);
     }
 
+    @GetMapping("/clear-cache")
+    public ResponseEntity<?> clearCacheRestaurant() {
+        restaurantService.clearAllCache();
+        return new ResponseEntity<>("", HttpStatus.OK);
+    }
+
     @GetMapping("/{id}")
     public ResponseEntity<?> getDetailRestaurant(@PathVariable("id") int id) {
         RestaurantDetailDTO detailDTO = restaurantService.getDetailRestaurant(id);
